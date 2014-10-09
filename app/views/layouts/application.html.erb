@@ -5,11 +5,7 @@
     <title><%= content_for?(:title) ? yield(:title) : "Social" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Social" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%# Modernizr is required for Zurb Foundation %>
-    <%= javascript_include_tag 'vendor/modernizr' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-  </head>
+     </head>
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
